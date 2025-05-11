@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui Som - Food Truck Delicioso</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo.png" alt="Logo Food Truck" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Menú Frío
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="freds/iberico.html">Entrepà de Ibèric</a></li>
+                                <li><a class="dropdown-item" href="freds/formatge.html">Entrepà Formatge</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Menú Caliente
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="calents/burger.html">Burger</a></li>
+                                <li><a class="dropdown-item" href="calents/frankfurt.html">Frankfurt</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Postres
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="dolços/magnum.html">Gelat Magnum</a></li>
+                                <li><a class="dropdown-item" href="dolços/crepe.html">Crêppe xocolata</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Bebidas
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="begudes/coca.html">Coca Cola</a></li>
+                                <li><a class="dropdown-item" href="begudes/cerveza.html">Cervesa</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button class="btn btn-outline-primary me-2" id="loginBtn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="bi bi-box-arrow-in-right"></i> Login
+                        </button>
+                        <button class="btn btn-outline-danger d-none" id="logoutBtn">
+                            <i class="bi bi-box-arrow-left"></i> Logout
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-end">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Iniciar Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <main class="container my-4">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb" class="my-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Qui Som</li>
+            </ol>
+        </nav>
+
+        <!-- Contenido Principal -->
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="mb-4">Qui Som</h1>
+                <p class="lead">Bienvenidos a Food Truck Delicioso, tu destino gastronómico móvil favorito.</p>
+                
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-clock-history"></i> Nuestra Historia</h5>
+                        <p class="card-text">Fundada en 2020, nuestra food truck nació con la idea de llevar la mejor comida rápida a todos los rincones. Lo que comenzó como un pequeño proyecto familiar se ha convertido en una referencia en el sector de la restauración móvil.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-geo-alt"></i> Ubicación</h5>
+                        <p class="card-text">Nos puedes encontrar en diferentes puntos de la ciudad:</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Plaza Mayor - Lunes a Viernes</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Parque Central - Fines de semana</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Eventos especiales y ferias</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-people"></i> Nuestro Equipo</h5>
+                        <p class="card-text">Contamos con un equipo de profesionales apasionados por la gastronomía, comprometidos con ofrecer la mejor experiencia a nuestros clientes.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-envelope"></i> Contacto</h5>
+                        <p class="card-text">¿Quieres reservar nuestra food truck para un evento o tienes alguna pregunta?</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-telephone"></i> Teléfono: 123-456-789</li>
+                            <li><i class="bi bi-envelope"></i> Email: info@foodtruckdelicioso.com</li>
+                            <li><i class="bi bi-geo-alt"></i> Dirección: Calle Principal, 123</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><i class="bi bi-star"></i> Nuestros Valores</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Calidad en cada plato</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Atención personalizada</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Compromiso con el medio ambiente</li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> Innovación constante</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light py-4">
+        <div class="container">
+            <!-- Alert de Cookies -->
+            <div class="alert alert-info alert-dismissible fade show" role="alert">
+                Este sitio web utiliza cookies para mejorar tu experiencia.
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+
+            <!-- Redes Sociales -->
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="text-dark"><i class="bi bi-facebook fs-4"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-instagram fs-4"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-twitter fs-4"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-tiktok fs-4"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+</body>
+</html> 

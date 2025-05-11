@@ -1,0 +1,80 @@
+/* Estilos generales */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Estilos del carrusel */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Estilos de las cards */
+.card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Estilos de los iconos de valoración */
+.bi-hand-thumbs-up-fill,
+.bi-hand-thumbs-down-fill {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.bi-hand-thumbs-up-fill:hover,
+.bi-hand-thumbs-down-fill:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos del modal de login */
+.modal-dialog-end {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Estilos del footer */
+footer {
+    margin-top: auto;
+}
+
+/* Estilos de las redes sociales */
+footer .bi {
+    transition: transform 0.3s ease;
+}
+
+footer .bi:hover {
+    transform: scale(1.2);
+}
+
+/* Tooltips personalizados */
+[data-bs-toggle="tooltip"] {
+    position: relative;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px;
+    }
+    
+    .card-img-top {
+        height: 150px;
+    }
+}
